@@ -1,7 +1,9 @@
 {
   "name": "vue-virtual-carousel",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
+    "prepare": "npm run build",
     "build": "vue-tsc --noEmit && vite build",
     "test:unit": "vitest --environment jsdom",
     "typecheck": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
