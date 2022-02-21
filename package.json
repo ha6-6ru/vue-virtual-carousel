@@ -2,6 +2,18 @@
   "name": "vue-virtual-carousel",
   "version": "0.1.0",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-virtual-carousel.umd.js",
+  "module": "./dist/vue-virtual-carousel.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-virtual-carousel.es.js",
+      "require": "./dist/vue-virtual-carousel.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "prepare": "npm run build",
     "build": "vue-tsc --noEmit && vite build",
