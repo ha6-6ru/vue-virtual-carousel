@@ -31,6 +31,32 @@ npm run lint
 
 ## Usage
 
+### install from github
+
+```sh
+npm install git+https://github.com/ha6-6ru/vue-virtual-carousel.git
+```
+
+### import css
+
+```javascript
+import 'vue-virtual-carousel/dist/style.css';
+```
+
+### local component
+
+```javascript
+import { VirtualCarousel } from 'vue-virtual-carousel';
+```
+
+### global component
+
+```javascript
+import VirtualCarousel from 'vue-virtual-carousel';
+const app = createApp(App);
+app.use(VirtualCarousel);
+```
+
 ### example
 
 ```html
