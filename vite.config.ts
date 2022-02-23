@@ -9,8 +9,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'vue-virtual-carousel',
-      fileName: (format) => `vue-virtual-carousel.${format}.js`,
+      formats: ['es'],
     },
     rollupOptions: {
       external: ['vue'],
@@ -21,5 +20,6 @@ export default defineConfig({
         exports: 'named',
       },
     },
+    emptyOutDir: false,
   },
 });
